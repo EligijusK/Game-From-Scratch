@@ -1,2 +1,2 @@
 # Game-From-Scratch
-Game mad with openGL
+Game made with openGL
