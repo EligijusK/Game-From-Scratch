@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/eligijuskiudys/Desktop/Game From Scrach/Texture.cpp" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o"
-  "/Users/eligijuskiudys/Desktop/Game From Scrach/main.cpp" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/main.cpp.o"
-  "/Users/eligijuskiudys/Desktop/Game From Scrach/mesh.cpp" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o"
-  "/Users/eligijuskiudys/Desktop/Game From Scrach/shader.cpp" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/shader.cpp.o"
-  "/Users/eligijuskiudys/Desktop/Game From Scrach/window.cpp" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/window.cpp.o"
+  "/Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o"
+  "/Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/main.cpp.o"
+  "/Users/eligijuskiudys/Desktop/Game-From-Scratch/mesh.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o"
+  "/Users/eligijuskiudys/Desktop/Game-From-Scratch/shader.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/shader.cpp.o"
+  "/Users/eligijuskiudys/Desktop/Game-From-Scratch/window.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/window.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

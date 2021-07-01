@@ -594,7 +594,7 @@ vec4-ext.h
 util.h
 ../include/cglm/util.h
 
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/Shader.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Shader.h
 OpenGL/gl3.h
 -
 OpenGL/gl3ext.h
@@ -602,7 +602,9 @@ OpenGL/gl3ext.h
 GL/glew.h
 -
 camera.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/camera.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h
+Transform.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
 string
 -
 fstream
@@ -612,97 +614,27 @@ sstream
 iostream
 -
 
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/Texture.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
 GLFW/glfw3.h
 -
 cglm/cglm.h
 -
-string
--
+camera.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h
+cglm/affine.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/cglm/affine.h
+iostream
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/iostream
 
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/camera.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h
 cglm/cglm.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/cglm/cglm.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/cglm/cglm.h
 
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/mesh.h
-GLFW/glfw3.h
--
-cglm/cglm.h
--
-string
--
-vector
--
-
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/window.h
-stdlib.h
--
-stdio.h
--
-GLFW/glfw3.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/GLFW/glfw3.h
-
-/Users/eligijuskiudys/Desktop/Game From Scrach/include/GLFW/glfw3.h
-stddef.h
--
-stdint.h
--
-vulkan/vulkan.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2.h
--
-GLES2/gl2ext.h
--
-GLES3/gl3.h
--
-GLES2/gl2ext.h
--
-GLES3/gl31.h
--
-GLES2/gl2ext.h
--
-GLES3/gl32.h
--
-GLES2/gl2ext.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-GL/glcorearb.h
--
-OpenGL/glu.h
--
-GL/glu.h
--
-OpenGL/gl.h
--
-GL/gl.h
--
-GL/glext.h
--
-
-/Users/eligijuskiudys/Desktop/Game From Scrach/main.cpp
-include/GLFW/glfw3.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/include/GLFW/glfw3.h
-GL/glew.h
--
-inc/camera.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/camera.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/shader.cpp
 inc/Shader.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/Shader.h
-inc/mesh.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/mesh.h
-inc/window.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/window.h
-inc/Texture.h
-/Users/eligijuskiudys/Desktop/Game From Scrach/inc/Texture.h
-stdlib.h
--
-stdio.h
--
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Shader.h
+inc/camera.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h
+inc/Transform.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
 

@@ -1,6 +1,6 @@
 #include "inc/Shader.h"
 #include "inc/camera.h"
-
+#include "inc/Transform.h"
 using namespace std;
 
 unsigned int Shader::program;
@@ -38,7 +38,6 @@ Shader::Shader(std::string vertexPath, std::string fragmentPath)
     glCompileShader(vertex_shader);
     checkCompileErrors(vertex_shader, "VERTEX");
 
-
     fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragment_shader, 1, &fShaderCode, NULL);
     glCompileShader(fragment_shader);
@@ -54,6 +53,8 @@ Shader::Shader(std::string vertexPath, std::string fragmentPath)
     GLint index = Shader::get_shader_index("textCoord");
     glBindAttribLocation(program, 3, "textCoord");
 
+    m_uniforms[0] = glGetUniformLocation(program, "transform");
+
 };
 
 
@@ -62,12 +63,12 @@ void Shader::use()
     glUseProgram(this->program);
 }
 
-void Shader::update(Camera camera)
+void Shader::update(Transform transform)
 {
-//    GLint mvp_location;
-//    mvp_location = glGetUniformLocation(program, "MVP");
-//    mat4 * res = camera.GetViewProjection();
-//    glUniformMatrix4fv(mvp_location, 1, GL_FALSE, *res[2]);
+    //mat4 model = ;
+    GLint mvp_location = glGetUniformLocation(program, "MVP");
+    //cout << transform.getModel()[0][0] << endl;
+   glUniformMatrix4fv(mvp_location, 1, GL_FALSE,  *transform.getModel());
 }
 
 void Shader::setBool(const std::string &name, bool value) const

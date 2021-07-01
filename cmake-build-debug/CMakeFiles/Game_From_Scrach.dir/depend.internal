@@ -63,8 +63,8 @@ CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o
  ../include/cglm/vec4-ext.h
  ../include/cglm/vec4.h
  ../include/stb_image.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/Texture.cpp
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/Texture.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Texture.h
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o
  ../include/GLFW/glfw3.h
  ../include/cglm/affine-mat.h
@@ -126,13 +126,14 @@ CMakeFiles/Game_From_Scrach.dir/main.cpp.o
  ../include/cglm/vec3.h
  ../include/cglm/vec4-ext.h
  ../include/cglm/vec4.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/Shader.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/Texture.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/camera.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/mesh.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/window.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/include/GLFW/glfw3.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/main.cpp
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Shader.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Texture.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/mesh.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/window.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/include/GLFW/glfw3.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o
  ../include/GLFW/glfw3.h
  ../include/cglm/affine-mat.h
@@ -193,11 +194,13 @@ CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o
  ../include/cglm/vec3.h
  ../include/cglm/vec4-ext.h
  ../include/cglm/vec4.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/Shader.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/camera.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/mesh.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/mesh.cpp
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Shader.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/mesh.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/mesh.cpp
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o
+ ../include/GLFW/glfw3.h
  ../include/cglm/affine-mat.h
  ../include/cglm/affine.h
  ../include/cglm/affine2d.h
@@ -257,11 +260,12 @@ CMakeFiles/Game_From_Scrach.dir/shader.cpp.o
  ../include/cglm/vec3.h
  ../include/cglm/vec4-ext.h
  ../include/cglm/vec4.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/Shader.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/camera.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/shader.cpp
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Shader.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/shader.cpp
 CMakeFiles/Game_From_Scrach.dir/window.cpp.o
  ../include/GLFW/glfw3.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/inc/window.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/include/GLFW/glfw3.h
- /Users/eligijuskiudys/Desktop/Game From Scrach/window.cpp
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/window.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/include/GLFW/glfw3.h
+ /Users/eligijuskiudys/Desktop/Game-From-Scratch/window.cpp

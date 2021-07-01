@@ -59,6 +59,10 @@ int main(void)
 
     Texture texture("textures/bricks.png");
 
+    vec3 rotation {0, 0, 0};
+    vec3 scale {2, 1, 1};
+
+    Transform transform(position, rotation, scale);
 
     while (window.run())
     {
@@ -68,7 +72,7 @@ int main(void)
         //shader.update(camera);
         mesh.Draw();
         texture.bind(0);
-
+        shader.update(transform);
         window.swap_buffer();
 
     }

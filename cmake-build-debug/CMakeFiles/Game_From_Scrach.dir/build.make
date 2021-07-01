@@ -62,10 +62,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/eligijuskiudys/Desktop/Game From Scrach"
+CMAKE_SOURCE_DIR = /Users/eligijuskiudys/Desktop/Game-From-Scratch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Game_From_Scrach.dir/depend.make
@@ -78,68 +78,68 @@ include CMakeFiles/Game_From_Scrach.dir/flags.make
 
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: CMakeFiles/Game_From_Scrach.dir/flags.make
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Game_From_Scrach.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/main.cpp.o -c "/Users/eligijuskiudys/Desktop/Game From Scrach/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Game_From_Scrach.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/main.cpp.o -c /Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp
 
 CMakeFiles/Game_From_Scrach.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game_From_Scrach.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/eligijuskiudys/Desktop/Game From Scrach/main.cpp" > CMakeFiles/Game_From_Scrach.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp > CMakeFiles/Game_From_Scrach.dir/main.cpp.i
 
 CMakeFiles/Game_From_Scrach.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/eligijuskiudys/Desktop/Game From Scrach/main.cpp" -o CMakeFiles/Game_From_Scrach.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp -o CMakeFiles/Game_From_Scrach.dir/main.cpp.s
 
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: CMakeFiles/Game_From_Scrach.dir/flags.make
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game_From_Scrach.dir/shader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/shader.cpp.o -c "/Users/eligijuskiudys/Desktop/Game From Scrach/shader.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game_From_Scrach.dir/shader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/shader.cpp.o -c /Users/eligijuskiudys/Desktop/Game-From-Scratch/shader.cpp
 
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game_From_Scrach.dir/shader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/eligijuskiudys/Desktop/Game From Scrach/shader.cpp" > CMakeFiles/Game_From_Scrach.dir/shader.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eligijuskiudys/Desktop/Game-From-Scratch/shader.cpp > CMakeFiles/Game_From_Scrach.dir/shader.cpp.i
 
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/shader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/eligijuskiudys/Desktop/Game From Scrach/shader.cpp" -o CMakeFiles/Game_From_Scrach.dir/shader.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/shader.cpp -o CMakeFiles/Game_From_Scrach.dir/shader.cpp.s
 
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: CMakeFiles/Game_From_Scrach.dir/flags.make
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o -c "/Users/eligijuskiudys/Desktop/Game From Scrach/mesh.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o -c /Users/eligijuskiudys/Desktop/Game-From-Scratch/mesh.cpp
 
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game_From_Scrach.dir/mesh.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/eligijuskiudys/Desktop/Game From Scrach/mesh.cpp" > CMakeFiles/Game_From_Scrach.dir/mesh.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eligijuskiudys/Desktop/Game-From-Scratch/mesh.cpp > CMakeFiles/Game_From_Scrach.dir/mesh.cpp.i
 
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/mesh.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/eligijuskiudys/Desktop/Game From Scrach/mesh.cpp" -o CMakeFiles/Game_From_Scrach.dir/mesh.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/mesh.cpp -o CMakeFiles/Game_From_Scrach.dir/mesh.cpp.s
 
 CMakeFiles/Game_From_Scrach.dir/window.cpp.o: CMakeFiles/Game_From_Scrach.dir/flags.make
 CMakeFiles/Game_From_Scrach.dir/window.cpp.o: ../window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Game_From_Scrach.dir/window.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/window.cpp.o -c "/Users/eligijuskiudys/Desktop/Game From Scrach/window.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Game_From_Scrach.dir/window.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/window.cpp.o -c /Users/eligijuskiudys/Desktop/Game-From-Scratch/window.cpp
 
 CMakeFiles/Game_From_Scrach.dir/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game_From_Scrach.dir/window.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/eligijuskiudys/Desktop/Game From Scrach/window.cpp" > CMakeFiles/Game_From_Scrach.dir/window.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eligijuskiudys/Desktop/Game-From-Scratch/window.cpp > CMakeFiles/Game_From_Scrach.dir/window.cpp.i
 
 CMakeFiles/Game_From_Scrach.dir/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/window.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/eligijuskiudys/Desktop/Game From Scrach/window.cpp" -o CMakeFiles/Game_From_Scrach.dir/window.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/window.cpp -o CMakeFiles/Game_From_Scrach.dir/window.cpp.s
 
 CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o: CMakeFiles/Game_From_Scrach.dir/flags.make
 CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o: ../Texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o -c "/Users/eligijuskiudys/Desktop/Game From Scrach/Texture.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o -c /Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp
 
 CMakeFiles/Game_From_Scrach.dir/Texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game_From_Scrach.dir/Texture.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/eligijuskiudys/Desktop/Game From Scrach/Texture.cpp" > CMakeFiles/Game_From_Scrach.dir/Texture.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp > CMakeFiles/Game_From_Scrach.dir/Texture.cpp.i
 
 CMakeFiles/Game_From_Scrach.dir/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/Texture.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/eligijuskiudys/Desktop/Game From Scrach/Texture.cpp" -o CMakeFiles/Game_From_Scrach.dir/Texture.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp -o CMakeFiles/Game_From_Scrach.dir/Texture.cpp.s
 
 # Object files for target Game_From_Scrach
 Game_From_Scrach_OBJECTS = \
@@ -159,7 +159,7 @@ Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/window.cpp.o
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/build.make
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Game_From_Scrach"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Game_From_Scrach"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game_From_Scrach.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -172,6 +172,6 @@ CMakeFiles/Game_From_Scrach.dir/clean:
 .PHONY : CMakeFiles/Game_From_Scrach.dir/clean
 
 CMakeFiles/Game_From_Scrach.dir/depend:
-	cd "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/eligijuskiudys/Desktop/Game From Scrach" "/Users/eligijuskiudys/Desktop/Game From Scrach" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug" "/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/eligijuskiudys/Desktop/Game-From-Scratch /Users/eligijuskiudys/Desktop/Game-From-Scratch /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Game_From_Scrach.dir/depend
 

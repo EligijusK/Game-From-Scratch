@@ -127,6 +127,7 @@ CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../include/cglm/vec4-ext.h
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../include/cglm/vec4.h
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../inc/Shader.h
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../inc/Texture.h
+CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../inc/Transform.h
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../inc/camera.h
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../inc/mesh.h
 CMakeFiles/Game_From_Scrach.dir/main.cpp.o: ../inc/window.h
@@ -193,10 +194,12 @@ CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../include/cglm/vec3.h
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../include/cglm/vec4-ext.h
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../include/cglm/vec4.h
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../inc/Shader.h
+CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../inc/Transform.h
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../inc/camera.h
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../inc/mesh.h
 CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o: ../mesh.cpp
 
+CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../include/GLFW/glfw3.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../include/cglm/affine-mat.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../include/cglm/affine.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../include/cglm/affine2d.h
@@ -257,6 +260,7 @@ CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../include/cglm/vec3.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../include/cglm/vec4-ext.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../include/cglm/vec4.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../inc/Shader.h
+CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../inc/Transform.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../inc/camera.h
 CMakeFiles/Game_From_Scrach.dir/shader.cpp.o: ../shader.cpp
 

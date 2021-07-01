@@ -14,6 +14,7 @@
 #endif
 //#include <GL/.h> // include glad to get all the required OpenGL headers
 #include "camera.h"
+#include "Transform.h"
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -23,6 +24,12 @@
 class Shader {
 private:
     static unsigned int program;
+
+    static const unsigned int NUM_SHADERS = 2;
+    static const unsigned int NUM_UNIFORMS = 3;
+
+    GLuint m_shaders[NUM_SHADERS];
+    GLuint m_uniforms[NUM_UNIFORMS];
 public:
 // the program ID
     // constructor reads and builds the shader
@@ -36,7 +43,7 @@ public:
     // use/activate the shader
     void use();
 
-    void update(Camera camera);
+    void update(Transform transform);
     // utility uniform functions
     void setBool(const std::string &name, bool value) const;
 
@@ -47,6 +54,7 @@ public:
     void setVector3(const std::string &name, float value[]) const;
 
     void checkCompileErrors(unsigned int shader, std::string type);
+
 };
 
 #endif

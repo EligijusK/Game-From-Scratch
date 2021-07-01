@@ -8,127 +8,132 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug"/>
+				<Option working_dir="/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug"/>
+				<Option working_dir="/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug"/>
+				<Option working_dir="/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Game_From_Scrach">
-				<Option output="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/Game_From_Scrach" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug"/>
+				<Option output="/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Game_From_Scrach" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/eligijuskiudys/Desktop/Game From Scrach/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Users/eligijuskiudys/Desktop/Game-From-Scratch/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game_From_Scrach"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game_From_Scrach"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Game_From_Scrach/fast">
-				<Option output="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug/Game_From_Scrach" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/eligijuskiudys/Desktop/Game From Scrach/cmake-build-debug"/>
+				<Option output="/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Game_From_Scrach" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/eligijuskiudys/Desktop/Game From Scrach/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Users/eligijuskiudys/Desktop/Game-From-Scratch/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game_From_Scrach/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game\ From\ Scrach/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game_From_Scrach/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/Texture.cpp">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/inc/Shader.h">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Shader.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/inc/Texture.h">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Texture.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/inc/camera.h">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/inc/mesh.h">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/camera.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/inc/window.h">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/mesh.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/include/stb_image.h">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/window.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/include/stb_image_write.h">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/include/stb_image.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/main.cpp">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/include/stb_image_write.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/mesh.cpp">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/shader.cpp">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/mesh.cpp">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/window.cpp">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/shader.cpp">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/CMakeLists.txt">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/window.cpp">
+			<Option target="Game_From_Scrach"/>
+		</Unit>
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/../../../../usr/local/lib/cmake/glfw3/glfw3Config.cmake">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/../../../../usr/local/lib/cmake/glfw3/glfw3Config.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/../../../../usr/local/lib/cmake/glfw3/glfw3ConfigVersion.cmake">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/../../../../usr/local/lib/cmake/glfw3/glfw3ConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/../../../../usr/local/lib/cmake/glfw3/glfw3Targets-release.cmake">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/../../../../usr/local/lib/cmake/glfw3/glfw3Targets-release.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/Users/eligijuskiudys/Desktop/Game From Scrach/../../../../usr/local/lib/cmake/glfw3/glfw3Targets.cmake">
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/../../../../usr/local/lib/cmake/glfw3/glfw3Targets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
 		</Unit>
 	</Project>
