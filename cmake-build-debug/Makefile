@@ -142,6 +142,60 @@ Game_From_Scrach/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/build
 .PHONY : Game_From_Scrach/fast
 
+Physics/BoxCollider.o: Physics/BoxCollider.cpp.o
+
+.PHONY : Physics/BoxCollider.o
+
+# target to build an object file
+Physics/BoxCollider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o
+.PHONY : Physics/BoxCollider.cpp.o
+
+Physics/BoxCollider.i: Physics/BoxCollider.cpp.i
+
+.PHONY : Physics/BoxCollider.i
+
+# target to preprocess a source file
+Physics/BoxCollider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.i
+.PHONY : Physics/BoxCollider.cpp.i
+
+Physics/BoxCollider.s: Physics/BoxCollider.cpp.s
+
+.PHONY : Physics/BoxCollider.s
+
+# target to generate assembly for a file
+Physics/BoxCollider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.s
+.PHONY : Physics/BoxCollider.cpp.s
+
+Physics/SphereCollider.o: Physics/SphereCollider.cpp.o
+
+.PHONY : Physics/SphereCollider.o
+
+# target to build an object file
+Physics/SphereCollider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o
+.PHONY : Physics/SphereCollider.cpp.o
+
+Physics/SphereCollider.i: Physics/SphereCollider.cpp.i
+
+.PHONY : Physics/SphereCollider.i
+
+# target to preprocess a source file
+Physics/SphereCollider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.i
+.PHONY : Physics/SphereCollider.cpp.i
+
+Physics/SphereCollider.s: Physics/SphereCollider.cpp.s
+
+.PHONY : Physics/SphereCollider.s
+
+# target to generate assembly for a file
+Physics/SphereCollider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.s
+.PHONY : Physics/SphereCollider.cpp.s
+
 Texture.o: Texture.cpp.o
 
 .PHONY : Texture.o
@@ -286,6 +340,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Game_From_Scrach"
+	@echo "... Physics/BoxCollider.o"
+	@echo "... Physics/BoxCollider.i"
+	@echo "... Physics/BoxCollider.s"
+	@echo "... Physics/SphereCollider.o"
+	@echo "... Physics/SphereCollider.i"
+	@echo "... Physics/SphereCollider.s"
 	@echo "... Texture.o"
 	@echo "... Texture.i"
 	@echo "... Texture.s"

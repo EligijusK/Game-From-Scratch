@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o"
+  "/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o"
   "/Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o"
   "/Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/main.cpp.o"
   "/Users/eligijuskiudys/Desktop/Game-From-Scratch/mesh.cpp" "/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o"

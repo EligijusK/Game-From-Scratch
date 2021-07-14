@@ -141,13 +141,41 @@ CMakeFiles/Game_From_Scrach.dir/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/Texture.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp -o CMakeFiles/Game_From_Scrach.dir/Texture.cpp.s
 
+CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o: CMakeFiles/Game_From_Scrach.dir/flags.make
+CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o: ../Physics/BoxCollider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o -c /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.cpp
+
+CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.cpp > CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.i
+
+CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.cpp -o CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.s
+
+CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o: CMakeFiles/Game_From_Scrach.dir/flags.make
+CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o: ../Physics/SphereCollider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o -c /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.cpp
+
+CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.cpp > CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.i
+
+CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.cpp -o CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.s
+
 # Object files for target Game_From_Scrach
 Game_From_Scrach_OBJECTS = \
 "CMakeFiles/Game_From_Scrach.dir/main.cpp.o" \
 "CMakeFiles/Game_From_Scrach.dir/shader.cpp.o" \
 "CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o" \
 "CMakeFiles/Game_From_Scrach.dir/window.cpp.o" \
-"CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o"
+"CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o" \
+"CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o" \
+"CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o"
 
 # External object files for target Game_From_Scrach
 Game_From_Scrach_EXTERNAL_OBJECTS =
@@ -157,9 +185,11 @@ Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/shader.cpp.o
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/mesh.cpp.o
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/window.cpp.o
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o
+Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o
+Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/build.make
 Game_From_Scrach: CMakeFiles/Game_From_Scrach.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Game_From_Scrach"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Game_From_Scrach"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game_From_Scrach.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.cpp">
+			<Option target="Game_From_Scrach"/>
+		</Unit>
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.h">
+			<Option target="Game_From_Scrach"/>
+		</Unit>
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.cpp">
+			<Option target="Game_From_Scrach"/>
+		</Unit>
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.h">
+			<Option target="Game_From_Scrach"/>
+		</Unit>
 		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/Texture.cpp">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
@@ -107,6 +119,9 @@
 			<Option target="Game_From_Scrach"/>
 		</Unit>
 		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/include/stb_image_write.h">
+			<Option target="Game_From_Scrach"/>
+		</Unit>
+		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/include/tiny_obj_loader.h">
 			<Option target="Game_From_Scrach"/>
 		</Unit>
 		<Unit filename="/Users/eligijuskiudys/Desktop/Game-From-Scratch/main.cpp">

@@ -43,7 +43,7 @@ public:
     // use/activate the shader
     void use();
 
-    void update(Transform transform);
+    void update(Transform transform, Camera camera);
     // utility uniform functions
     void setBool(const std::string &name, bool value) const;
 

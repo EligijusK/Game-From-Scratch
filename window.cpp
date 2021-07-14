@@ -40,6 +40,12 @@ Window::Window(int height, int width)
 
     glfwMakeContextCurrent(window);
 
+    glEnable(GL_DEPTH_TEST);
+
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
+
+
     //gladLoadGL(glfwGetProcAddress);
     glfwSwapInterval(1);
 
@@ -62,7 +68,7 @@ void Window::clear_viewport()
 {
     glfwGetFramebufferSize(window, &width, &height);
     glViewport(0, 0, width, height);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 void Window::swap_buffer()

@@ -4,15 +4,16 @@
 
 #ifndef GAME_FROM_SCRACH_MESH_H
 #define GAME_FROM_SCRACH_MESH_H
-
 #include <GLFW/glfw3.h>
 #include <cglm/cglm.h>
 #include <string>
 #include <vector>
 
+
 struct Vertex
 {
 public:
+
     Vertex( vec3& poss,  vec2& texCoords, vec3& normals)
     {
         glm_vec3_copy(poss, pos);
@@ -41,15 +42,16 @@ enum MeshBufferPositions
 class Mesh
 {
 public:
-    Mesh(const std::string& fileName);
-    Mesh(Vertex* vertices, unsigned int numVertices);
 
+    Mesh(Vertex* vertices, unsigned int numVertices, unsigned int *indices, int numIndices);
+    void ReadMesh(char *filename);
+    void MeshInit();
     void Draw();
 
     virtual ~Mesh();
 protected:
 private:
-    static const unsigned int NUM_BUFFERS = 4;
+    static const unsigned int NUM_BUFFERS = 2718;
     void operator=(const Mesh& mesh) {}
     Mesh(const Mesh& mesh) {}
 

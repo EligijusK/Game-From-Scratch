@@ -21,60 +21,46 @@ public:
         glm_vec3_copy(scale, m_scale);
     }
 
-    inline mat4 & getModel()
+    inline mat4 * getModel()
     {
-        mat4 posMatrix;
-        glm_mat4_identity(posMatrix);
-        glm_translate(posMatrix, m_pos);
-        glm_mat4_transpose(posMatrix);
+        glm_mat4_identity(resMatrix);
+        mat4 rotMatrix;
+        mat4 rotX;
+        glm_mat4_identity(rotX);
+        mat4 rotY;
+        glm_mat4_identity(rotY);
+        mat4 rotZ;
+        glm_mat4_identity(rotZ);
+        glm_rotate(rotX, glm_rad(m_rot[0]), vec3{1,0,0});
+//        glm_rotate(rotY, glm_rad(m_rot[1]), vec3{0,1,0});
+//        glm_rotate(rotZ, glm_rad(m_rot[2]), vec3{0,0,1});
+        glm_mat4_mulN((mat4 *[]){ &rotX, &rotY, &rotZ}, 3, rotMatrix);
 
-        mat4 scaleMatrix {{1,0,0,0},
-                          {0,1,0,0},
-                          {0,0,1,0},
-                          {0,0,0,1}};
+        mat4 scaleMatrix;
+        glm_mat4_identity(scaleMatrix);
         glm_scale(scaleMatrix, m_scale);
-        std::cout << scaleMatrix[0][0] << std::endl;
 
 
+        mat4 translateMatrix;
+        glm_mat4_identity(translateMatrix);
+        glm_translate(translateMatrix, m_pos);
+
+//        vec3 invPos;
+//        glm_vec3_negate_to(m_pos, invPos);
+//        glm_translate(poseMatrix, invPos);
 
 
-        mat4 rotX {{1,0,0,0},
-                   {0,1,0,0},
-                   {0,0,1,0},
-                   {0,0,0,1}};
-        glm_rotate(rotX, m_rot[0], vec3{1.0, 0.0, 0.0});
-        mat4 rotY {{1,0,0,0},
-                   {0,1,0,0},
-                   {0,0,1,0},
-                   {0,0,0,1}};
-        glm_rotate(rotY, m_rot[1], vec3{0.0, 1.0, 0.0});
+//        glm_mat4_mul(poseMatrix, rotMat, resMatrix);
+        //glm_mat4_mul(poseMatrix, scaleMatrix, resMatrix);
 
-        mat4 rotZ {{1,0,0,0},
-                   {0,1,0,0},
-                   {0,0,1,0},
-                   {0,0,0,1}};
-        glm_rotate(rotZ, m_rot[2], vec3{0.0, 0.0, 1.0});
-        mat4 rotMat {{1,0,0,0},
-                     {0,1,0,0},
-                     {0,0,1,0},
-                     {0,0,0,1}};
+        glm_mat4_mulN((mat4 *[]){&translateMatrix, &scaleMatrix, &rotMatrix}, 3, resMatrix);
 
+/* if you don't want to use mulN, same as above */
+//        glm_mat4_mul(transform3, transform2, finalTransform);
+//        glm_mat4_mul(finalTransform, transform1, finalTransform);
+        //glm_mat4_copy(poseMatrix, resMatrix);
 
-        glm_mul(rotX, rotY, rotMat);
-        glm_mul(rotMat, rotZ, rotMat);
-
-        mat4 resMatrix {{1,0,0,0},
-                        {0,1,0,0},
-                        {0,0,1,0},
-                        {0,0,0,1}};
-        mat4 tempResMatrix {{1,0,0,0},
-                            {0,1,0,0},
-                            {0,0,1,0},
-                            {0,0,0,1}};
-        glm_mul(posMatrix, rotMat, tempResMatrix);
-        glm_mul(tempResMatrix, scaleMatrix, resMatrix);
-
-        return posMatrix;
+        return &resMatrix;
     }
 
 //    inline glm::mat4 GetMVP(const Camera& camera) const
@@ -96,6 +82,7 @@ private:
     vec3 m_pos;
     vec3 m_rot;
     vec3 m_scale;
+    mat4 resMatrix;
 };
 
 #endif
