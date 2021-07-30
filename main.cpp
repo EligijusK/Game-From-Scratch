@@ -10,6 +10,8 @@
 #include "inc/Texture.h"
 #include "Physics/SphereCollider.h"
 #include "Physics/BoxCollider.h"
+#include "inc/GameObject.h"
+
 #define GLFW_INCLUDE_NONE
 
 #include <stdlib.h>
@@ -23,26 +25,36 @@ int main(void)
 
     Window window(640, 480);
 
-    vec3 cameraPosition{0.f, 0.f, -6.f};
+    vec3 cameraPosition{0.f, 0.f, -4.f};
     vec3 cameraAngle{0, 0,0};
     Camera camera(cameraPosition, cameraAngle, 70.f,  640/480, 0.1f, 1000.f);
 
     vec3 ve[]{
-            {-0.6f, -0.4f, 1},
-            {0.6f, -0.4f, 1},
-            {0.6f, 0.4f, 1},
-            {-0.6f, 0.4f, 1},
+            {0.0f, 0.0f, 0.0f}, // top right point
+            {1.0f, 0.0f, 0.0f}, // top left point
+            {1.0f, -1.0f, 0.0f}, // bottom left point
+            {0.0f, -1.0f, 0.0f}, // bottom right point
     };
+
+    //     -0.5f,  0.5f, 1.0f, 0.0f, 0.0f, // Top-left
+    //     0.5f,  0.5f, 0.0f, 1.0f, 0.0f, // Top-right
+    //     0.5f, -0.5f, 0.0f, 0.0f, 1.0f, // Bottom-right
+    //    -0.5f, -0.5f, 1.0f, 1.0f, 1.0f  // Bottom-left
 
     vec2 tex[]{
             {0,0},
             {1,0},
             {1,1},
+            {1,1},
             {0,1},
+            {0,0}
+
 
     };
 
     vec3 nor[]{
+            {0,0,0},
+            {0,0,0},
             {0,0,0},
             {0,0,0},
             {0,0,0},
@@ -53,14 +65,17 @@ int main(void)
     Vertex vert[] {Vertex(ve[0], tex[0], nor[0]),
                     Vertex(ve[1], tex[1], nor[1]),
                     Vertex(ve[2], tex[2], nor[2]),
-                    Vertex(ve[3], tex[3], nor[3])
+                    Vertex(ve[3], tex[3], nor[3]),
                 };
 
     Shader shader("shaders/vertex.shader","shaders/fragment.shader");
 
     // mesh must be after shader because of singleton
-    unsigned int ind[] {0,1,2,3};
+    unsigned int ind[] {0,1,2,2,3,0};
+    //std::cout << sizeof(vert)/sizeof(vert[0]) << std::endl;
     Mesh mesh(vert, sizeof(vert)/sizeof(vert[0]), ind, sizeof(ind)/sizeof(ind[0]));
+
+    Mesh meshObj("boxUv.obj");
 
     Texture texture("textures/bricks.png");
 
@@ -69,7 +84,6 @@ int main(void)
     vec3 scale {1, 1, 1};
 
     Transform transform(objectPosition, rotation, scale);
-
 
     SphereCollider sphereCollider(objectPosition, 10);
 
@@ -82,27 +96,20 @@ int main(void)
     BoxCollider secCollider(positionForCollider, size);
     BoxCollider collider(objectPosition, size);
 
-    std::cout << secCollider.IntersectCollision(collider) << std::endl;
+   // std::cout << secCollider.IntersectCollision(collider) << std::endl;
 
+    GameObject go(&transform, &shader, &texture, &mesh, &camera);
 
-    mesh.MeshInit();
+    GameObject goObj(&transform, &shader, &texture, &meshObj, &camera);
+
     float counter = 0.f;
     while (window.run())
     {
         window.clear_viewport();
 
-        float sinCounter = sinf(counter);
-        float absSinCounter = abs(sinCounter);
-        vec3 rot;
-        glm_vec3_copy(*transform.getRot(), rot);
-        rot[0] = 30;
-        transform.setRot(rot);
+        goObj.Update();
+        go.Update();
 
-        shader.use();
-        //shader.update(camera);
-        mesh.Draw();
-        texture.bind(0);
-        shader.update(transform, camera);
         window.swap_buffer();
         counter += 0.01f;
 

@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Game_From_Scrach.dir/GameObject.cpp.o"
   "CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.o"
+  "CMakeFiles/Game_From_Scrach.dir/Physics/Physics.cpp.o"
   "CMakeFiles/Game_From_Scrach.dir/Physics/SphereCollider.cpp.o"
   "CMakeFiles/Game_From_Scrach.dir/Texture.cpp.o"
   "CMakeFiles/Game_From_Scrach.dir/main.cpp.o"

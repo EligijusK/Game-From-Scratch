@@ -13,7 +13,7 @@ set(LINK_DIR ${Game_From_Scrach_SOURCE_DIR}/lib)
 include_directories(${INC_DIR})
 link_directories(${LINK_DIR})
 
-add_executable(Game_From_Scrach main.cpp inc/Shader.h shader.cpp inc/camera.h inc/mesh.h mesh.cpp inc/mesh.h inc/window.h window.cpp include/stb_image.h include/stb_image_write.h Texture.cpp inc/Texture.h inc/Transform.h include/tiny_obj_loader.h Physics/BoxCollider.cpp Physics/BoxCollider.h Physics/SphereCollider.cpp Physics/SphereCollider.h)
+add_executable(Game_From_Scrach main.cpp inc/Shader.h shader.cpp inc/camera.h inc/mesh.h mesh.cpp inc/mesh.h inc/window.h window.cpp include/stb_image.h include/stb_image_write.h Texture.cpp inc/Texture.h inc/Transform.h include/tiny_obj_loader.h Physics/BoxCollider.cpp Physics/BoxCollider.h Physics/SphereCollider.cpp Physics/SphereCollider.h Physics/Physics.cpp Physics/Physics.h GameObject.cpp inc/GameObject.h)
 
 target_link_libraries (Game_From_Scrach glfw3)
 

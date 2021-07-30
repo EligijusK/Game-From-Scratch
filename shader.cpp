@@ -45,33 +45,42 @@ Shader::Shader(std::string vertexPath, std::string fragmentPath)
     checkCompileErrors(fragment_shader, "FRAGMENT");
 
 
-    program = glCreateProgram();
-    glAttachShader(program, vertex_shader);
-    glAttachShader(program, fragment_shader);
-    glLinkProgram(program);
+    realProgram = glCreateProgram();
+    program = realProgram;
+    glAttachShader(realProgram, vertex_shader);
+    glAttachShader(realProgram, fragment_shader);
+    glLinkProgram(realProgram);
     checkCompileErrors(vertex_shader, "PROGRAM");
 
     GLint index = Shader::get_shader_index("textCoord");
-    glBindAttribLocation(program, index, "textCoord");
+    glBindAttribLocation(realProgram, index, "textCoord");
 
     GLint indexUV = Shader::get_shader_index("vNorm");
-    glBindAttribLocation(program, indexUV, "vNorm");
+    glBindAttribLocation(realProgram, indexUV, "vNorm");
 
 
-    m_uniforms[0] = glGetUniformLocation(program, "transform");
+    m_uniforms[0] = glGetUniformLocation(realProgram, "transform");
 
 };
 
 
 void Shader::use()
 {
-    glUseProgram(this->program);
+    if(program != realProgram)
+    {
+        program = realProgram;
+    }
+    glUseProgram(this->realProgram);
 }
 
 void Shader::update(Transform transform, Camera camera)
 {
+    if(program != realProgram)
+    {
+        program = realProgram;
+    }
     //mat4 model = ;
-    GLint mvp_location = glGetUniformLocation(program, "MVP");
+    GLint mvp_location = glGetUniformLocation(realProgram, "MVP");
     mat4 *cameraRes = camera.GetViewProjection();
     mat4 *res = transform.getModel();
     mat4 rr;
@@ -83,15 +92,15 @@ void Shader::update(Transform transform, Camera camera)
 void Shader::setBool(const std::string &name, bool value) const
 {
     unsigned int pp = program;
-    glUniform1i(glGetUniformLocation(program, name.c_str()), (int)value);
+    glUniform1i(glGetUniformLocation(realProgram, name.c_str()), (int)value);
 }
 void Shader::setInt(const std::string &name, int value) const
 {
-    glUniform1i(glGetUniformLocation(program, name.c_str()), value);
+    glUniform1i(glGetUniformLocation(realProgram, name.c_str()), value);
 }
 void Shader::setFloat(const std::string &name, float value) const
 {
-    glUniform1f(glGetUniformLocation(program, name.c_str()), value);
+    glUniform1f(glGetUniformLocation(realProgram, name.c_str()), value);
 }
 
 void Shader::checkCompileErrors(unsigned int shader, std::string type)

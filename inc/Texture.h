@@ -18,7 +18,6 @@ public:
     virtual ~Texture();
 
 private:
-    Texture(const Texture &other);
     void operator = (const Texture &other);
     GLuint m_texture;
 };

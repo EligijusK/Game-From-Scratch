@@ -142,6 +142,33 @@ Game_From_Scrach/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/build
 .PHONY : Game_From_Scrach/fast
 
+GameObject.o: GameObject.cpp.o
+
+.PHONY : GameObject.o
+
+# target to build an object file
+GameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/GameObject.cpp.o
+.PHONY : GameObject.cpp.o
+
+GameObject.i: GameObject.cpp.i
+
+.PHONY : GameObject.i
+
+# target to preprocess a source file
+GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/GameObject.cpp.i
+.PHONY : GameObject.cpp.i
+
+GameObject.s: GameObject.cpp.s
+
+.PHONY : GameObject.s
+
+# target to generate assembly for a file
+GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/GameObject.cpp.s
+.PHONY : GameObject.cpp.s
+
 Physics/BoxCollider.o: Physics/BoxCollider.cpp.o
 
 .PHONY : Physics/BoxCollider.o
@@ -168,6 +195,33 @@ Physics/BoxCollider.s: Physics/BoxCollider.cpp.s
 Physics/BoxCollider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/BoxCollider.cpp.s
 .PHONY : Physics/BoxCollider.cpp.s
+
+Physics/Physics.o: Physics/Physics.cpp.o
+
+.PHONY : Physics/Physics.o
+
+# target to build an object file
+Physics/Physics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/Physics.cpp.o
+.PHONY : Physics/Physics.cpp.o
+
+Physics/Physics.i: Physics/Physics.cpp.i
+
+.PHONY : Physics/Physics.i
+
+# target to preprocess a source file
+Physics/Physics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/Physics.cpp.i
+.PHONY : Physics/Physics.cpp.i
+
+Physics/Physics.s: Physics/Physics.cpp.s
+
+.PHONY : Physics/Physics.s
+
+# target to generate assembly for a file
+Physics/Physics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/Physics/Physics.cpp.s
+.PHONY : Physics/Physics.cpp.s
 
 Physics/SphereCollider.o: Physics/SphereCollider.cpp.o
 
@@ -340,9 +394,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Game_From_Scrach"
+	@echo "... GameObject.o"
+	@echo "... GameObject.i"
+	@echo "... GameObject.s"
 	@echo "... Physics/BoxCollider.o"
 	@echo "... Physics/BoxCollider.i"
 	@echo "... Physics/BoxCollider.s"
+	@echo "... Physics/Physics.o"
+	@echo "... Physics/Physics.i"
+	@echo "... Physics/Physics.s"
 	@echo "... Physics/SphereCollider.o"
 	@echo "... Physics/SphereCollider.i"
 	@echo "... Physics/SphereCollider.s"

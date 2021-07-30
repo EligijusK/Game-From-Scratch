@@ -10,6 +10,7 @@
 #include <vector>
 
 
+
 struct Vertex
 {
 public:
@@ -44,8 +45,7 @@ class Mesh
 public:
 
     Mesh(Vertex* vertices, unsigned int numVertices, unsigned int *indices, int numIndices);
-    void ReadMesh(char *filename);
-    void MeshInit();
+    Mesh(char *filename);
     void Draw();
 
     virtual ~Mesh();
@@ -53,13 +53,22 @@ protected:
 private:
     static const unsigned int NUM_BUFFERS = 2718;
     void operator=(const Mesh& mesh) {}
-    Mesh(const Mesh& mesh) {}
+    void SendData();
 
     //void InitMesh(const IndexedModel& model);
+    vec2 *textCoords;
+    vec3 *positions;
+    vec3 *normals;
+    unsigned int *indicesArray;
+
+    GLuint vPos;
+    int textCoorsIndex;
+    GLuint vNorm;
 
     GLuint m_vertexArrayObject;
     GLuint m_vertexArrayBuffers[NUM_BUFFERS];
     unsigned int m_drawCount;
+    int m_verticesCount;
 };
 
 #endif

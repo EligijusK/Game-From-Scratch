@@ -93,12 +93,12 @@ clean: CMakeFiles/Game_From_Scrach.dir/clean
 CMakeFiles/Game_From_Scrach.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_From_Scrach.dir/build.make CMakeFiles/Game_From_Scrach.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Game_From_Scrach"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Game_From_Scrach"
 .PHONY : CMakeFiles/Game_From_Scrach.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Game_From_Scrach.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Game_From_Scrach.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eligijuskiudys/Desktop/Game-From-Scratch/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Game_From_Scrach.dir/rule

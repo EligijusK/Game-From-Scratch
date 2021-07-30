@@ -24,6 +24,7 @@
 class Shader {
 private:
     static unsigned int program;
+    unsigned int realProgram;
 
     static const unsigned int NUM_SHADERS = 2;
     static const unsigned int NUM_UNIFORMS = 3;
