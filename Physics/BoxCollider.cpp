@@ -40,3 +40,8 @@ vec3 &BoxCollider::GetSize()
 {
     return size;
 }
+
+float **BoxCollider::GetBoxCorners()
+{
+    return boxCorners;
+}

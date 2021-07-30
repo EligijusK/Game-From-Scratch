@@ -13,15 +13,13 @@ public:
         glm_vec3_copy(position, this->position);
         glm_vec3_copy(size, this->size);
 
-        boxCorners[0] = new float[3] {position[0] - size[0]/2, position[1] - size[1]/2, position[3]};
-        boxCorners[1] = new float[3] {position[0] - size[0]/2, position[1] + size[1]/2, position[3]};
-        boxCorners[2] = new float[3] {position[0] + size[0]/2, position[1] - size[1]/2, position[3]};
-        boxCorners[3] = new float[3] {position[0] + size[0]/2, position[1] + size[1]/2, position[3]};
+        boxCorners = new float *[4];
 
         boxCorners[0] = new float[3] {position[0] - size[0]/2, position[1] - size[1]/2, position[3]};
         boxCorners[1] = new float[3] {position[0] - size[0]/2, position[1] + size[1]/2, position[3]};
         boxCorners[2] = new float[3] {position[0] + size[0]/2, position[1] - size[1]/2, position[3]};
         boxCorners[3] = new float[3] {position[0] + size[0]/2, position[1] + size[1]/2, position[3]};
+
 
     }
 
@@ -29,9 +27,10 @@ public:
 
     vec3 &GetPositon();
     vec3 &GetSize();
+    float **GetBoxCorners();
 
 private:
-    float *boxCorners[4];
+    float **boxCorners;
     vec3 position;
     vec3 rotation;
     vec3 size;

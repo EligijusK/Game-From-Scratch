@@ -94,7 +94,7 @@ Mesh::Mesh(char *filename)
         m_drawCount = meshData.size();
         m_verticesCount = meshData.size();
         SendData();
-        glBindVertexArray(0);
+
     }
 
 
@@ -114,7 +114,7 @@ Mesh::Mesh(Vertex* vertices, unsigned int numVertices, unsigned int *indices, in
     for(int i = 0; i < numVertices; i++)
     {
         glm_vec3_copy(*vertices[i].GetPos(), positions[i]);
-        glm_vec3_copy(*vertices[i].GetTexCoord(), textCoords[i]);
+        glm_vec2_copy(*vertices[i].GetTexCoord(), textCoords[i]);
         //glm_vec3_copy(*vertices[i].GetNormal(), normals[i]);
     }
 
@@ -123,37 +123,6 @@ Mesh::Mesh(Vertex* vertices, unsigned int numVertices, unsigned int *indices, in
     m_drawCount = numIndices;
     m_verticesCount = numVertices;
 
-
-//    glGenBuffers(NUM_BUFFERS, m_vertexArrayBuffers);
-//
-//
-//    glBindBuffer(GL_ARRAY_BUFFER, m_vertexArrayBuffers[POSITION_VB]);
-//    glBufferData(GL_ARRAY_BUFFER, numVertices * sizeof (positions[0]), positions, GL_STATIC_DRAW);
-//
-//
-//
-//    char posName[] = "vPos";
-//    GLuint vPos = Shader::get_shader_index(posName);
-//    glEnableVertexAttribArray(vPos);
-//    glVertexAttribPointer(vPos, 3, GL_FLOAT, GL_FALSE, sizeof(positions[0]), (void*) 0);
-//
-//
-//    // text coords;
-//
-//    glBindBuffer(GL_ARRAY_BUFFER, m_vertexArrayBuffers[TEXCOORD_VB]);
-//    glBufferData(GL_ARRAY_BUFFER, numVertices * sizeof (textCoords[0]), textCoords, GL_STATIC_DRAW);
-//    //std::cout << m_vertexArrayBuffers[POSITION_VB];
-//
-//    int textCoorsIndex = Shader::get_shader_index("textCoord");
-////    std::cout << textCoorsIndex << std::endl;
-////    std::cout << textCoorsIndex << std::endl;
-//    glEnableVertexAttribArray(textCoorsIndex);
-//    glVertexAttribPointer(textCoorsIndex, 2, GL_FLOAT, GL_FALSE, sizeof(textCoords[0]), (void*) 0);
-//
-//
-//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_vertexArrayBuffers[INDEX_VB]);
-//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, numIndices * sizeof (indices[0]), indices, GL_STATIC_DRAW);
-//    glBindVertexArray(0);
 
 }
 
@@ -168,7 +137,6 @@ void Mesh::Draw()
 {
 
     SendData();
-
     glBindVertexArray(m_vertexArrayObject);
     glDrawElements(GL_TRIANGLES, m_drawCount, GL_UNSIGNED_INT, 0);
 
@@ -214,5 +182,54 @@ void Mesh::SendData()
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_vertexArrayBuffers[INDEX_VB]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, m_drawCount * sizeof (indicesArray[0]), indicesArray, GL_STATIC_DRAW);
+
+}
+
+void Mesh::CreateCircle( GLfloat x, GLfloat y, GLfloat z, GLfloat radius, GLint numberOfSides )
+{
+    int numberOfVertices = numberOfSides + 2;
+
+    numberOfVertices = numberOfVertices *3;
+
+    GLfloat twicePi = 2.0f * M_PI;
+
+    positions = new vec3[numberOfVertices];
+    textCoords = new vec2[numberOfVertices];
+    normals = new vec3[numberOfVertices];
+    indicesArray = new unsigned int[numberOfVertices];
+
+
+    for ( int i = 0; i < numberOfVertices;)
+    {
+        vec2 textCoord {0,0};
+
+        vec3 current {x, y, z};
+        vec3 priev {x + ( radius * cos( i *  twicePi / numberOfSides ) ), y + ( radius * sin( i * twicePi / numberOfSides ) ), z};
+
+        glm_vec3_copy(priev, positions[i]);
+        glm_vec2_copy(textCoord, textCoords[i]);
+        indicesArray[i] = i;
+
+        i++;
+
+        glm_vec3_copy(current, positions[i]);
+        glm_vec2_copy(textCoord, textCoords[i]);
+        indicesArray[i] = 1;
+
+        i++;
+
+        vec3 next {x + ( radius * cos( i *  twicePi / numberOfSides ) ), y + ( radius * sin( i * twicePi / numberOfSides ) ), z};
+
+        glm_vec3_copy(next, positions[i]);
+        glm_vec2_copy(textCoord, textCoords[i]);
+        indicesArray[i] = i;
+
+        i++;
+
+
+    }
+
+    m_drawCount = numberOfVertices;
+    m_verticesCount = numberOfVertices;
 
 }
