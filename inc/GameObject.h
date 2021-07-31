@@ -15,13 +15,14 @@ class GameObject {
 public:
     GameObject(Transform *transform, Shader *shader, Texture *texture, Mesh *mesh, Camera *camera);
     void Update();
-
-private:
     Transform *transform;
     Shader *shader;
     Texture *texture;
     Mesh *mesh;
     Camera *camera;
+
+private:
+
 };
 
 

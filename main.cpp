@@ -20,6 +20,18 @@
 
 using namespace std;
 
+#define PI 3.14159265
+
+float Jump(float deltaTime, float h)
+{
+
+    float u = 2;
+    float jumpAngle = 90;
+    float y = ((u*jumpAngle*PI/180)*deltaTime) + (0.5*(-9.8)*pow(deltaTime, 2)) + h;
+    std::cout << "time: " << deltaTime << "distance: " << y << std::endl;
+    return y;
+}
+
 int main(void)
 {
 
@@ -130,19 +142,28 @@ int main(void)
     mesh.CreateCircle(objectPosition[0],objectPosition[1],objectPosition[2], 1, 100);
     mesh2.CreateCircle(secObjectPosition[0],secObjectPosition[1],secObjectPosition[2], 1, 100);
     float counter = 0.f;
+
+    clock_t begin_time = clock();
+    float h = *go.transform->getPos()[1];
+
     while (window.run())
     {
+        float diffticks = clock() - begin_time;
+        double deltaTime=(diffticks)/(CLOCKS_PER_SEC/10);
         window.clear_viewport();
-
+        float y = Jump(deltaTime, h);
+        vec3 position {*go.transform->getPos()[0], y, *go.transform->getPos()[2]};
+        go.transform->setPos(position);
         //goObj.Update();
         go.Update();
         goSec.Update();
 
         window.swap_buffer();
-        counter += 0.01f;
+
 
     }
 
     window.destroy_window();
     exit(EXIT_SUCCESS);
 }
+
