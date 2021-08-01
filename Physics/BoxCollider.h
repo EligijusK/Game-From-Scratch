@@ -6,32 +6,34 @@
 #define GAME_FROM_SCRACH_BOXCOLLIDER_H
 #include <cglm/cglm.h>
 #include <vector>
-
+#include "../inc/Transform.h"
 class BoxCollider {
 public:
-    BoxCollider(vec3 &position, vec3 &size) {
-        glm_vec3_copy(position, this->position);
+    BoxCollider(Transform *transfrom, vec3 &size) {
+        this->transform = transfrom;
         glm_vec3_copy(size, this->size);
+        cornerCount = 4;
+        boxCorners = new float *[cornerCount];
 
-        boxCorners = new float *[4];
+        vec3 position {0,0,0};
+        glm_vec3_copy(*transform->getPos(), position);
 
-        boxCorners[0] = new float[3] {position[0] - size[0]/2, position[1] - size[1]/2, position[3]};
-        boxCorners[1] = new float[3] {position[0] - size[0]/2, position[1] + size[1]/2, position[3]};
-        boxCorners[2] = new float[3] {position[0] + size[0]/2, position[1] - size[1]/2, position[3]};
-        boxCorners[3] = new float[3] {position[0] + size[0]/2, position[1] + size[1]/2, position[3]};
-
+        boxCorners[0] = new float[3] {position[0] - size[0]/2, position[1] - size[1]/2, position[2]};
+        boxCorners[1] = new float[3] {position[0] - size[0]/2, position[1] + size[1]/2, position[2]}; // top
+        boxCorners[2] = new float[3] {position[0] + size[0]/2, position[1] - size[1]/2, position[2]};
+        boxCorners[3] = new float[3] {position[0] + size[0]/2, position[1] + size[1]/2, position[2]}; // top
 
     }
 
-    bool IntersectCollision(BoxCollider boxCollider);
-
     vec3 &GetPositon();
+    int GetCornerCount();
     vec3 &GetSize();
     float **GetBoxCorners();
 
 private:
+    int cornerCount;
     float **boxCorners;
-    vec3 position;
+    Transform *transform;
     vec3 rotation;
     vec3 size;
 };

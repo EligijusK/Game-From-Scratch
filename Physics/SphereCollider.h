@@ -5,21 +5,21 @@
 #ifndef GAME_FROM_SCRACH_SPHERECOLLIDER_H
 #define GAME_FROM_SCRACH_SPHERECOLLIDER_H
 #include <cglm/cglm.h>
+#include "../inc/Transform.h"
 
 class SphereCollider {
 public:
-    SphereCollider(vec3 &position, float radius)
+    SphereCollider(Transform *transform, float radius)
     {
-        glm_vec3_copy(position, this->position);
+        this->transform = transform;
         this->radius = radius;
     }
 
-    bool Intersected(SphereCollider &sphereCollider);
     vec3 &GetPositon();
     float GetRadius();
 
 private:
-    vec3 position;
+    Transform *transform;
     float radius;
 };
 

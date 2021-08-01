@@ -9,17 +9,22 @@
 #include "Transform.h";
 #include "Shader.h";
 #include "Texture.h";
+#include "../Physics/BoxCollider.h"
+#include "../Physics/SphereCollider.h"
 
 class GameObject {
 
 public:
     GameObject(Transform *transform, Shader *shader, Texture *texture, Mesh *mesh, Camera *camera);
     void Update();
+    void CreateCircleMesh(float radius, int numberOfSides);
     Transform *transform;
     Shader *shader;
     Texture *texture;
     Mesh *mesh;
     Camera *camera;
+    BoxCollider *boxCcollider;
+    SphereCollider *sphereCollider;
 
 private:
 

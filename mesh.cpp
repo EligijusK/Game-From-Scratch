@@ -185,7 +185,7 @@ void Mesh::SendData()
 
 }
 
-void Mesh::CreateCircle( GLfloat x, GLfloat y, GLfloat z, GLfloat radius, GLint numberOfSides )
+void Mesh::CreateCircle( GLfloat x, GLfloat y, GLfloat z, float radius, int numberOfSides )
 {
     int numberOfVertices = numberOfSides + 2;
 

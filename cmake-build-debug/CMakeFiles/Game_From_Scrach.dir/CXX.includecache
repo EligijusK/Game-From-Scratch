@@ -599,10 +599,20 @@ cglm/cglm.h
 -
 vector
 -
+../inc/Transform.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
+
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/Physics.h
+SphereCollider.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.h
+BoxCollider.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.h
 
 /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.h
 cglm/cglm.h
 -
+../inc/Transform.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Transform.h
 
 /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Camera.h
 iostream
@@ -623,6 +633,10 @@ Shader.h
 /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Shader.h
 Texture.h
 /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Texture.h
+../Physics/BoxCollider.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.h
+../Physics/SphereCollider.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/SphereCollider.h
 
 /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/Mesh.h
 GLFW/glfw3.h
@@ -765,6 +779,8 @@ Physics/BoxCollider.h
 /Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/BoxCollider.h
 inc/GameObject.h
 /Users/eligijuskiudys/Desktop/Game-From-Scratch/inc/GameObject.h
+Physics/Physics.h
+/Users/eligijuskiudys/Desktop/Game-From-Scratch/Physics/Physics.h
 stdlib.h
 -
 stdio.h

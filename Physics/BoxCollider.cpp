@@ -5,35 +5,15 @@
 #include <iostream>
 #include "BoxCollider.h"
 
-bool BoxCollider::IntersectCollision(BoxCollider boxCollider)
-{
-
-    bool colliding = false;
-    for (int i = 0; i < 4; ++i) {
-
-        for (int j = 0; j < 4; ++j) {
-
-
-            vec3 tempOther{boxCollider.boxCorners[i][0], boxCollider.boxCorners[i][1], boxCollider.boxCorners[i][2]};
-            vec3 tempLocal{this->boxCorners[j][0], this->boxCorners[j][1], this->boxCorners[j][2]};
-
-            float distanceToOther = glm_vec3_distance(position, tempOther);
-            float distanceToLocal = glm_vec3_distance(position, tempLocal);
-
-            if (distanceToOther <= distanceToLocal) {
-                colliding = true;
-                break;
-            }
-        }
-
-    }
-    return colliding;
-
-}
 
 vec3 &BoxCollider::GetPositon()
 {
-    return position;
+    return *transform->getPos();
+}
+
+int BoxCollider::GetCornerCount()
+{
+    return cornerCount;
 }
 
 vec3 &BoxCollider::GetSize()
@@ -43,5 +23,13 @@ vec3 &BoxCollider::GetSize()
 
 float **BoxCollider::GetBoxCorners()
 {
+    vec3 position {0,0,0};
+    glm_vec3_copy(*transform->getPos(), position);
+
+    boxCorners[0] = new float[3] {position[0] - size[0]/2, position[1] - size[1]/2, position[2]};
+    boxCorners[1] = new float[3] {position[0] - size[0]/2, position[1] + size[1]/2, position[2]};
+    boxCorners[2] = new float[3] {position[0] + size[0]/2, position[1] - size[1]/2, position[2]};
+    boxCorners[3] = new float[3] {position[0] + size[0]/2, position[1] + size[1]/2, position[2]};
+
     return boxCorners;
 }

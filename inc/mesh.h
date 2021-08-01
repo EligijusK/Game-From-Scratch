@@ -47,7 +47,7 @@ public:
     Mesh(Vertex* vertices, unsigned int numVertices, unsigned int *indices, int numIndices);
     Mesh(char *filename);
     void Draw();
-    void CreateCircle( GLfloat x, GLfloat y, GLfloat z, GLfloat radius, GLint numberOfSides );
+    void CreateCircle( GLfloat x, GLfloat y, GLfloat z, float radius, int numberOfSides );
 
     virtual ~Mesh();
 protected:

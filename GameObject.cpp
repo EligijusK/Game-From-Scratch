@@ -3,6 +3,7 @@
 //
 
 #include "inc/GameObject.h"
+#include "Physics/BoxCollider.h"
 
 GameObject::GameObject(Transform *transform, Shader *shader, Texture *texture, Mesh *mesh, Camera *camera)
 {
@@ -27,4 +28,9 @@ void GameObject::Update() {
         texture->bind(0);
         shader->update(*transform, *camera);
 
+}
+
+void GameObject::CreateCircleMesh(float radius, int numberOfSides)
+{
+    mesh->CreateCircle(0,0,0, radius, numberOfSides);
 }

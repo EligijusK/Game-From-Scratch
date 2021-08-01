@@ -11,6 +11,7 @@
 #include "Physics/SphereCollider.h"
 #include "Physics/BoxCollider.h"
 #include "inc/GameObject.h"
+#include "Physics/Physics.h"
 
 #define GLFW_INCLUDE_NONE
 
@@ -28,13 +29,14 @@ float Jump(float deltaTime, float h)
     float u = 2;
     float jumpAngle = 90;
     float y = ((u*jumpAngle*PI/180)*deltaTime) + (0.5*(-9.8)*pow(deltaTime, 2)) + h;
-    std::cout << "time: " << deltaTime << "distance: " << y << std::endl;
+    //std::cout << "time: " << deltaTime << "distance: " << y << std::endl;
     return y;
 }
 
 int main(void)
 {
 
+    Physics physics;
     Window window(640, 480);
 
     vec3 cameraPosition{0.f, 0.f, -4.f};
@@ -46,10 +48,14 @@ int main(void)
     vec3 scale {1, 1, 1};
 
     vec3 size {1, 1, 0};
-    BoxCollider collider(objectPosition, size);
+    Transform transformCollider(objectPosition,rotation,scale);
+    BoxCollider collider(&transformCollider, size);
 
-    vec3 positionForCollider {1,-1.1,0};
-    BoxCollider secCollider(positionForCollider, size);
+    vec3 positionForCollider {0,0,0};
+    Transform secTransformCollider(positionForCollider,rotation,scale);
+    BoxCollider secCollider(&secTransformCollider, size);
+
+    std::cout << physics.Intersect(collider, secCollider) << std::endl;
 
     float **verts = collider.GetBoxCorners();
 
@@ -124,39 +130,44 @@ int main(void)
 
     Transform transform(objectPosition, rotation, scale);
 
-    SphereCollider sphereCollider(objectPosition, 1);
+    SphereCollider sphereCollider(&transform, 1);
 
-    vec3 secObjectPosition{2.f, 0.f, 0.f};
-    SphereCollider secSphereCollider(secObjectPosition, 1);
-
-
-
-
-    std::cout << sphereCollider.Intersected(secSphereCollider) << std::endl;
+    vec3 secObjectPosition{1.51f, 0.f, 0.f};
+    Transform secTransform(secObjectPosition, rotation, scale);
+    SphereCollider secSphereCollider(&secTransform, 1);
 
     GameObject go(&transform, &shader, &texture, &mesh, &camera);
-    GameObject goSec(&transform, &shader, &texture, &mesh2, &camera);
+    GameObject goSec(&secTransform, &shader, &texture, &mesh2, &camera);
+
+
+    std::cout << "sphere with box: " << physics.Intersect(secSphereCollider, collider) << std::endl;
 
     GameObject goObj(&transform, &shader, &texture, &meshObj, &camera);
 
-    mesh.CreateCircle(objectPosition[0],objectPosition[1],objectPosition[2], 1, 100);
-    mesh2.CreateCircle(secObjectPosition[0],secObjectPosition[1],secObjectPosition[2], 1, 100);
+    cout << "x: " << objectPosition[0] << endl;
+    go.CreateCircleMesh(1, 100);
+    //goSec.CreateCircleMesh(1, 100);
     float counter = 0.f;
 
     clock_t begin_time = clock();
     float h = *go.transform->getPos()[1];
 
+
+
     while (window.run())
     {
-        float diffticks = clock() - begin_time;
-        double deltaTime=(diffticks)/(CLOCKS_PER_SEC/10);
+        //float diffticks = clock() - begin_time;
+        //double deltaTime=(diffticks)/(CLOCKS_PER_SEC/10);
         window.clear_viewport();
-        float y = Jump(deltaTime, h);
-        vec3 position {*go.transform->getPos()[0], y, *go.transform->getPos()[2]};
-        go.transform->setPos(position);
+//        if(true) {
+//            float y = Jump(deltaTime, h);
+//            vec3 position{*go.transform->getPos()[0], y, *go.transform->getPos()[2]};
+//            go.transform->setPos(position);
+//        }
         //goObj.Update();
         go.Update();
         goSec.Update();
+
 
         window.swap_buffer();
 
