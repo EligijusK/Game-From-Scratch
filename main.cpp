@@ -132,15 +132,12 @@ int main(void)
 
     SphereCollider sphereCollider(&transform, 1);
 
-    vec3 secObjectPosition{1.51f, 0.f, 0.f};
+    vec3 secObjectPosition{0.f, 0.f, 0.f};
     Transform secTransform(secObjectPosition, rotation, scale);
     SphereCollider secSphereCollider(&secTransform, 1);
 
     GameObject go(&transform, &shader, &texture, &mesh, &camera);
     GameObject goSec(&secTransform, &shader, &texture, &mesh2, &camera);
-
-
-    std::cout << "sphere with box: " << physics.Intersect(secSphereCollider, collider) << std::endl;
 
     GameObject goObj(&transform, &shader, &texture, &meshObj, &camera);
 
@@ -166,7 +163,7 @@ int main(void)
 //        }
         //goObj.Update();
         go.Update();
-        goSec.Update();
+        //goSec.Update();
 
 
         window.swap_buffer();
